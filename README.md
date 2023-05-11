@@ -13,8 +13,20 @@ Changes since _Section 4_, _Video 3_.
 * Create full and trial versions of the `ExporterFactory` - code reuse.
 * Refactor `Main` to instantiate a specific `ExporterFactor` and supply that to `Cli` and `Web`.
 * Add new menu option to `Cli` and `Web` to be able to plot chart for reports.
-* Create `ChartPlotter` interface and several implementation to further demonstrate the Abstract Factory design pattern. 
+* Create `ChartPlotter` interface and several implementation to further demonstrate the Abstract Factory design pattern.
 
 **Note**: updated and refactored a bit how `Report` objects are created - previously values were stored in strings,
 now they are stored in `Field` objects which encapsulates the data and the data type as well in order that chart plotting
-could be implemented in a "sane" way.  
+could be implemented in a "sane" way.
+
+## Execution modes
+
+1. Full version for client 1
+
+   - CLI argument: 1
+   - VM options: `-DFULL_VERSION=true`
+
+2. Full version for client 2
+
+   - CLI argument: 2
+   - VM options: (empty)
